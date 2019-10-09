@@ -10,6 +10,10 @@ RUN /install-linuxdeploy.sh
 ADD install-linuxdeploy-plugin-appimage.sh /
 RUN /install-linuxdeploy-plugin-appimage.sh
 
+ARG ZSYNC_VERSION=0.6.2
+ADD install-zsync.sh /
+RUN /install-zsync.sh
+
 ADD entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
 
