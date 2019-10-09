@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
+
 set -ex
+
+source /entrypoint.sh
 
 git clone https://github.com/NixOS/patchelf.git
 pushd patchelf
