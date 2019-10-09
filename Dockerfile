@@ -10,5 +10,7 @@ RUN /install-linuxdeploy.sh
 ADD install-linuxdeploy-plugin-appimage.sh /
 RUN /install-linuxdeploy-plugin-appimage.sh
 
+ADD entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
+
 CMD ["bash"]
