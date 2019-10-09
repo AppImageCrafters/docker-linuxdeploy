@@ -6,3 +6,6 @@ RUN /install-patchelf.sh
 
 ADD install-linuxdeploy.sh /
 RUN /install-linuxdeploy.sh
+
+ADD install-linuxdeploy-plugin-appimage.sh /
+RUN /install-linuxdeploy-plugin-appimage.sh
