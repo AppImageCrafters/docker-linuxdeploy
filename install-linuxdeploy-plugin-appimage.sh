@@ -4,7 +4,7 @@ set -ex
 
 source /entrypoint.sh
 
-BUILD_DIR=/tmp/linuxdeploy-pluggin-qt
+BUILD_DIR=/tmp/linuxdeploy-pluggin-appimage
 
 git clone https://github.com/linuxdeploy/linuxdeploy-plugin-appimage.git --depth=1 ${BUILD_DIR}
 pushd ${BUILD_DIR}
